@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="0"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_calendar"
+                    android:src ="@drawable/calendar"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_calendar"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="calendar"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="0"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_camera"
+                    android:src ="@drawable/camera"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_camera"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="camera"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="2"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_player"
+                    android:src ="@drawable/player"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_player"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="player"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="0"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_music"
+                    android:src ="@drawable/music"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_music"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="music"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="1"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_hotspotfind"
+                    android:src ="@drawable/hotspotfind"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_hotspotfind"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:gravity="center_horizontal"
+                    android:text="hotspotfind"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="2"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_heartbeatbluer"
+                    android:src ="@drawable/heartbeatblue"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_heartbeatblue"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="heartbeatblue"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="0"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_calculator"
+                    android:src ="@drawable/calculator"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_calculator"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="calculator"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="1"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_bluetooth"
+                    android:src ="@drawable/bluetooth"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_bluetooth"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="bluetooth"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="2"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_fitness"
+                    android:src ="@drawable/fitness"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_fitness"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="fitness"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="0"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_picture"
+                    android:src ="@drawable/picture"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_picture"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="picture"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="1"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_find"
+                    android:src ="@drawable/find"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_find"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="find"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_column="2"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton_noteslg3"
+                    android:src ="@drawable/noteslg3"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_notes"
+                    android:singleLine = "true"
+                    android:inputType="text"
+                    android:text="notes"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
