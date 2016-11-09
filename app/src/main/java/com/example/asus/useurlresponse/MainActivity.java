@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         imageView_login.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this,SuccessActivity.class);
-                Intent intent1 = new Intent(MainActivity.this,FalseActivity.class);
+//                Intent intent1 = new Intent(MainActivity.this,FalseActivity.class);
                 EditText text_Name = (EditText)findViewById(R.id.editText_userName);
                 EditText text_Password = (EditText)findViewById(R.id.editText_password);
 

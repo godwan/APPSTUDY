@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.example.asus.useurlresponse.tools.MusicPlayer;
 import com.example.asus.useurlresponse.tools.ShowPicture;
+import com.example.asus.useurlresponse.tools.TakePhoto;
 
 public class SuccessActivity extends AppCompatActivity {
     private MediaPlayer player;
@@ -54,6 +55,14 @@ public class SuccessActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SuccessActivity.this,ShowPicture.class);
+                startActivity(intent);
+            }
+        });
+
+        imageButton_camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SuccessActivity.this,TakePhoto.class);
                 startActivity(intent);
             }
         });

@@ -10,4 +10,7 @@
 <string name="title_activity_register">register now </string>
 <string name="title_activity_musicplayer">player now </string>
 <string name="title_activity_showpicture">player now </string>
+<string name="title_activity_takephoto">player now </string>
+<string name="preview">预览</string>
+<string name="takephoto">拍照</string>
 </resources>

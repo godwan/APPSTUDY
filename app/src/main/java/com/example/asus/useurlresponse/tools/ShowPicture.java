@@ -67,10 +67,10 @@ public class ShowPicture extends AppCompatActivity {
 
         //图片数组
         private Integer[] mImageIds = {
-                R.raw.y1, R.raw.y2,
-                R.raw.y3, R.raw.y4,
-                R.raw.y5, R.raw.y6,
-                R.raw.y7, R.raw.y8};
+                R.drawable.won2, R.drawable.won3,
+                R.drawable.won4, R.drawable.won5,
+                R.drawable.won6, R.drawable.won7,
+                R.drawable.won8, R.drawable.won9};
         //构造方法
         public ImageAdapter(Context c){
             mContext = c;
