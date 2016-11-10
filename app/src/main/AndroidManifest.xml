@@ -29,10 +29,6 @@
             android:label="@string/title_activity_success">
         </activity>
         <activity
-            android:name=".FalseActivity"
-            android:label="@string/title_activity_false" >
-        </activity>
-        <activity
             android:name=".RegisterActivity"
             android:label="@string/title_activity_register" >
         </activity>

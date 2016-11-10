@@ -13,6 +13,7 @@ import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageFormat;
+import android.graphics.Matrix;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
 import android.hardware.Camera.PictureCallback;
@@ -78,6 +79,7 @@ public class TakePhoto extends Activity {
                     camera.setParameters(parameters);	//ÖØÐÂÉèÖÃÏà»ú²ÎÊý
                     camera.startPreview();	//¿ªÊ¼Ô¤ÀÀ
                     camera.autoFocus(null); // ÉèÖÃ×Ô¶¯¶Ô½¹
+                    camera.setDisplayOrientation(90);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -102,19 +104,20 @@ public class TakePhoto extends Activity {
             // ¸ù¾ÝÅÄÕÕËùµÃµÄÊý¾Ý´´½¨Î»Í¼
             final Bitmap bm = BitmapFactory.decodeByteArray(data, 0,
                     data.length);
+            final Bitmap bitmap = rotate(bm,90);
             // ¼ÓÔØlayout/save.xmlÎÄ¼þ¶ÔÓ¦µÄ²¼¾Ö×ÊÔ´
             View saveView = getLayoutInflater().inflate(R.layout.activity_camera_savephoto, null);
             final EditText photoName = (EditText) saveView
                     .findViewById(R.id.phone_name);
             // »ñÈ¡¶Ô»°¿òÉÏµÄImageView×é¼þ
             ImageView show = (ImageView) saveView.findViewById(R.id.show);
-            show.setImageBitmap(bm);			// ÏÔÊ¾¸Õ¸ÕÅÄµÃµÄÕÕÆ¬
+            show.setImageBitmap(bitmap);			// ÏÔÊ¾¸Õ¸ÕÅÄµÃµÄÕÕÆ¬
             camera.stopPreview();		//Í£Ö¹Ô¤ÀÀ
             isPreview = false;
 
             // Ê¹ÓÃ¶Ô»°¿òÏÔÊ¾saveDialog×é¼þ
             new AlertDialog.Builder(TakePhoto.this).setView(saveView)
-                    .setPositiveButton("±£´æ", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("保存", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             File file = new File("/sdcard/pictures/" + photoName
@@ -133,7 +136,7 @@ public class TakePhoto extends Activity {
                             }
                         }
 
-                    }).setNegativeButton("È¡Ïû", new DialogInterface.OnClickListener() {
+                    }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
 
                 public void onClick(DialogInterface dialog, int which) {
                     isPreview = true;
@@ -158,5 +161,22 @@ public class TakePhoto extends Activity {
         }
         super.onPause();
     }
+    public static Bitmap rotate(Bitmap b, int degrees) {
+        if (degrees != 0 && b != null) {
+            Matrix m = new Matrix();
+            m.setRotate(degrees,
+                    (float) b.getWidth() / 2, (float) b.getHeight() / 2);
+            try {
+                Bitmap b2 = Bitmap.createBitmap(b, 0, 0, b.getWidth(), b.getHeight(), m, true);
+                if (b != b2) {
+                    b.recycle();  //Android开发网再次提示Bitmap操作完应该显示的释放
+                    b = b2;
+                }
 
+            } catch (OutOfMemoryError ex) {
+//                     建议大家如何出现了内存不足异常，最好return 原始的bitmap对象。.
+            }
+        }
+        return b;
+    }
 }
