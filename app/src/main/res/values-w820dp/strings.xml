@@ -11,6 +11,14 @@
 <string name="title_activity_musicplayer">player now </string>
 <string name="title_activity_showpicture">player now </string>
 <string name="title_activity_takephoto">player now </string>
+
 <string name="preview">预览</string>
 <string name="takephoto">拍照</string>
+
+<string name="stop">停止</string>
+<string name="play">播放</string>
+<string name="onplay">上一曲</string>
+<string name="downplay">下一曲</string>
+<string name="close">关闭</string>
+<string name="exit">退出</string>
 </resources>

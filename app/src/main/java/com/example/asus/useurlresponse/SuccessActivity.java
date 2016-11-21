@@ -15,9 +15,9 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.asus.useurlresponse.tools.MusicPlayer;
 import com.example.asus.useurlresponse.tools.ShowPicture;
 import com.example.asus.useurlresponse.tools.TakePhoto;
+import com.example.asus.useurlresponse.tools.music.MusicPlayMain;
 
 public class SuccessActivity extends AppCompatActivity {
     private MediaPlayer player;
@@ -46,7 +46,7 @@ public class SuccessActivity extends AppCompatActivity {
         imageButton_music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SuccessActivity.this,MusicPlayer.class);
+                Intent intent = new Intent(SuccessActivity.this, MusicPlayMain.class);
                 startActivity(intent);
             }
         });

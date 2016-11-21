@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ced4ff">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:weightSum="1"
+        android:background="#3781ff">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:text="@string/onplay"
+        android:id="@+id/onplay"
+        android:background="#3781ff"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="72dp"
+        android:text="@string/play"
+        android:id="@+id/play_pause"
+        android:background="#3781ff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/stop"
+        android:id="@+id/stop"
+        android:background="#3781ff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/downplay"
+        android:id="@+id/downplay"
+        android:background="#3781ff"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="right" />
+
+</LinearLayout>
+
+    <!-- <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="音乐列表" android:textColor="#ff0000ff" android:textSize="30sp" /> -->
+
+    <ListView
+        android:layout_height="257dp"
+        android:layout_width="match_parent"
+        android:id="@+id/musics"
+        android:layout_weight="1.53"
+        android:background="#ced4ff">
+        <!--android:listSelector="@android:color/transparent" -->
+
+    </ListView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#3781ff">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/close"
+        android:id="@+id/close"
+        android:background="#3781ff"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/exit"
+        android:id="@+id/exit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#3781ff"
+        android:layout_marginLeft="5dp" />
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>

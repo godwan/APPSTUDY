@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="相片名称：" android:layout_marginRight="8dp"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="相片名称："
+        android:layout_marginRight="8dp"/>
 
-    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/phone_name"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/phone_name"/>
 
 </LinearLayout>
 
-    <ImageView android:layout_height="240dp" android:layout_width="320dp" android:id="@+id/show" android:layout_marginTop="10dp" android:scaleType="fitCenter" android:contentDescription="用于显示相片预览"/>
+    <ImageView
+        android:layout_height="320dp"
+        android:layout_width="240dp"
+        android:id="@+id/show"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="用于显示相片预览"/>
 
 </LinearLayout>
